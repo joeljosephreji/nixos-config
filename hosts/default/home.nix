@@ -45,7 +45,7 @@
     pkgs.fd
     pkgs.ripgrep
     pkgs.newsraft
-    pkgs.vim
+    pkgs.bat
 
     # command line applications
     pkgs.yazi
@@ -148,7 +148,7 @@
   #  /etc/profiles/per-user/kierkegaard/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "nvim";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
