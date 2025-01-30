@@ -38,7 +38,6 @@
   home.packages = [
     # compilers
     pkgs.gcc
-    pkgs.glib
     pkgs.gnumake
 
     # command line utils
