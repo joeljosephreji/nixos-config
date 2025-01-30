@@ -36,6 +36,10 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    # compilers
+    pkgs.gcc
+    pkgs.glib
+
     # command line utils
     pkgs.oh-my-posh
     pkgs.eza
