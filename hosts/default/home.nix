@@ -61,6 +61,7 @@
     pkgs.minizincide # check if a desktop file is also provided
 
     # application software and utils
+    pkgs.dunst
     pkgs.vimiv-qt
     pkgs.keepassxc
     pkgs.flowtime
