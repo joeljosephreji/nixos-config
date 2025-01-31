@@ -65,14 +65,13 @@
     # programming software
     pkgs.neovim
     pkgs.minizinc
-    pkgs.minizincide # check if a desktop file is also provided
+    pkgs.minizincide # TODO check if a desktop file is also provided
 
     # application software and utils
     pkgs.vimiv-qt
     pkgs.keepassxc
     pkgs.flowtime
     pkgs.zotero
-    pkgs.gammastep
     pkgs.lxqt.pcmanfm-qt
     pkgs.protonvpn-gui
     pkgs.copyq
@@ -168,5 +167,14 @@
 
   # managing fonts
   fonts.fontconfig.enable = true;
+
+  # gammastep
+  services.gammastep = {
+    enable = true;
+    provider = "manual";
+    dawnTime = "6:00-7:45";
+    duskTime = "18:35-20:15";
+    tray = true;
+  };
 
 }
