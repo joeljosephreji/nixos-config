@@ -168,4 +168,5 @@
 
   # managing fonts
   fonts.fontconfig.enable = true;
+
 }

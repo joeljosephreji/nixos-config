@@ -195,4 +195,8 @@
   # polkit
   security.polkit.enable = true;
 
+  # zsh
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
 }
