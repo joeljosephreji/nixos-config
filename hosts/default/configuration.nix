@@ -71,7 +71,7 @@
   users.users.kierkegaard = {
     isNormalUser = true;
     description = "kierkegaard";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" ];
     packages = with pkgs; [];
   };
 
