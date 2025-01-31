@@ -41,7 +41,7 @@
     pkgs.waybar
     pkgs.rofi-wayland
     pkgs.dunst
-    pkgs.hyprpolkitagent
+    pkgs.lxqt.lxqt-policykit
 
     # compilers
     pkgs.gcc

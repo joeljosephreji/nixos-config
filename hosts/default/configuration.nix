@@ -192,4 +192,7 @@
   # kdeconnect
   programs.kdeconnect.enable = true;
 
+  # polkit
+  security.polkit.enable = true;
+
 }
