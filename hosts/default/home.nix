@@ -43,9 +43,11 @@
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
 
-    # compilers
+    # compilers, interpreters, and programming stuff
     pkgs.gcc
     pkgs.gnumake
+    pkgs.python3Minimal
+    pkgs.pipenv
 
     # command line utils
     pkgs.oh-my-posh
