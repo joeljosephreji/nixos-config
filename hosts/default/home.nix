@@ -36,6 +36,13 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    # tools for window manager
+    pkgs.stow
+    pkgs.waybar
+    pkgs.rofi-wayland
+    pkgs.dunst
+    pkgs.hyprpolkitagent
+
     # compilers
     pkgs.gcc
     pkgs.gnumake
@@ -61,7 +68,6 @@
     pkgs.minizincide # check if a desktop file is also provided
 
     # application software and utils
-    pkgs.dunst
     pkgs.vimiv-qt
     pkgs.keepassxc
     pkgs.flowtime

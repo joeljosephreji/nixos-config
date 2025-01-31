@@ -87,10 +87,6 @@
   networkmanagerapplet
   brightnessctl
   playerctl
-  # TODO maybe remove the following packages from here later
-  stow
-  waybar
-  rofi-wayland
   #  wget
   ];
 
@@ -188,5 +184,12 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+
+  # for mounting external devices
+  services.udisks2.enable = true;
+  services.gvfs.enable = true;
+
+  # kdeconnect
+  programs.kdeconnect.enable = true;
 
 }
