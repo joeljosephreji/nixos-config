@@ -10,7 +10,7 @@
 # TODO nvidia stuff
 # TODO install hypr stuff - cursor, graphics, idle, land, lang, lock, paper, utils, scanner, portal
 # TODO is xvideo wayland bridge required?
-# TODO pavucontrol
+# TODO issue with mic not working after plugin headset
 # TODO hwinfo/lstopo
 # TODO meld
 # TODO networkmanager ?
@@ -95,6 +95,7 @@
     pkgs.tenacity
     pkgs.wezterm
     pkgs.calibre
+    pkgs.pwvucontrol
     # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
     # pkgs.kitty # TODO figure out how to set this and see if this needs to be set somewhere else
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
