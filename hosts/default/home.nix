@@ -46,6 +46,7 @@
     pkgs.gnumake
     pkgs.python3Minimal
     pkgs.pipenv
+    pkgs.conda
 
     # command line utils
     pkgs.oh-my-posh
