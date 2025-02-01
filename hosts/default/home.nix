@@ -8,16 +8,14 @@
 # TODO mpd - music player daemon
 # TODO minecraft
 # TODO nvidia stuff
-# TODO rog stuff - batteries, etc
-# TODO install hypr stuff - cursor, graphics, idle, land, lang, lock, paper, polkitagent, utils, scanner, portal
+# TODO install hypr stuff - cursor, graphics, idle, land, lang, lock, paper, utils, scanner, portal
 # TODO is xvideo wayland bridge required?
 # TODO pavucontrol
 # TODO hwinfo/lstopo
 # TODO meld
 # TODO networkmanager ?
-# TODO geo handler for gammastep
 # TODO xwayland ?
-# TODO librewolf ungoogled-chromium ?
+# TODO ungoogled-chromium ?
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -88,13 +86,13 @@
     pkgs.mousam
     pkgs.mpv
     pkgs.vlc
-    pkgs.localsend # TODO fix opengly thing
-    pkgs.obs-studio # TODO failed to initialise
+    pkgs.localsend
+    pkgs.obs-studio
     pkgs.qbittorrent
-    pkgs.qutebrowser # TODO fix, EGL not available
+    pkgs.qutebrowser
     pkgs.shortwave
-    pkgs.tenacity # TODO maybe some ffmpeg issue?
-    pkgs.wezterm # TODO issue with wayland / EGL?
+    pkgs.tenacity
+    pkgs.wezterm
     pkgs.calibre
     # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
     # pkgs.kitty # TODO figure out how to set this and see if this needs to be set somewhere else
@@ -109,7 +107,7 @@
     pkgs.slack
 
     # music
-    pkgs.spotube # TODO opengl stuff
+    pkgs.spotube
     # pkgs.kdePackages.audiotube # not working
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
