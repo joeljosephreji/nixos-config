@@ -82,7 +82,6 @@
     pkgs.copyq
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
-    pkgs.flameshot
     pkgs.gimp
     pkgs.kdePackages.kdenlive # TODO fix opengl thing
     pkgs.libreoffice-qt-fresh
@@ -181,6 +180,16 @@
     dawnTime = "6:00-7:45";
     duskTime = "18:35-20:15";
     tray = true;
+  };
+
+  # flameshot
+  services.flameshot = {
+    enable = true;
+    settings = {
+      General = {
+        disabledGrimWarning = true; # TODO not working/remove when solution is there in future
+      };
+    };
   };
 
 }
