@@ -88,7 +88,8 @@
   networkmanagerapplet
   brightnessctl
   playerctl
-  busybox
+  toybox
+  unzip
   #  wget
   ];
 
