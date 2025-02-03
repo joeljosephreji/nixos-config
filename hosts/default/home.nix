@@ -68,7 +68,6 @@
     pkgs.wl-clipboard
 
     # programming software
-    pkgs.neovim
     pkgs.minizinc
     pkgs.minizincide # TODO check if a desktop file is also provided
 
@@ -190,6 +189,15 @@
         disabledGrimWarning = true; # TODO not working/remove when solution is there in future
       };
     };
+  };
+
+  # neovim
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
   };
 
 }
