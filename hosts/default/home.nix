@@ -65,6 +65,7 @@
     # command line applications
     pkgs.yazi
     pkgs.btop
+    pkgs.wl-clipboard
 
     # programming software
     pkgs.neovim
