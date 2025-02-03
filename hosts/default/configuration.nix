@@ -88,6 +88,7 @@
   networkmanagerapplet
   brightnessctl
   playerctl
+  busybox
   #  wget
   ];
 
