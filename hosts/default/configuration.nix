@@ -201,4 +201,7 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  # enabling power profiles daemon
+  services.power-profiles-daemon.enable = true;
+
 }
