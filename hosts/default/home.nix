@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 
-# TODO figure out firefox
+# TODO figure out firefox options
 # TODO figure out how to theme gtk (nwlook) and qt applications - use catpuccin (refer to repo if needed)
 # TODO lookup nixos wiki on bluetooth (blueman)
-# TODO flatpak support and flatseal
+# TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall
 # TODO mpd - music player daemon
 # TODO minecraft
@@ -16,6 +16,9 @@
 # TODO networkmanager ?
 # TODO xwayland ?
 # TODO ungoogled-chromium ?
+# TODO pandoc
+# TODO shellcheck
+# TODO bottles
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -88,7 +91,7 @@
     pkgs.mpv
     pkgs.vlc
     pkgs.localsend
-    pkgs.obs-studio
+    pkgs.obs-studio # TODO check if flatpak is a better option
     pkgs.qbittorrent
     pkgs.qutebrowser
     pkgs.shortwave
