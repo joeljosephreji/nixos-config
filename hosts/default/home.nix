@@ -50,6 +50,7 @@
     pkgs.python3Minimal
     pkgs.pipenv
     pkgs.conda
+    pkgs.nodejs-slim
 
     # command line utils
     pkgs.oh-my-posh
