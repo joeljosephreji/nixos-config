@@ -17,6 +17,7 @@
 # TODO pandoc
 # TODO shellcheck
 # TODO bottles
+# TODO default applications xdg.mime
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
