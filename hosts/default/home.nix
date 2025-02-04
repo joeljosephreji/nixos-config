@@ -8,7 +8,6 @@
 # TODO mpd - music player daemon
 # TODO minecraft
 # TODO nvidia stuff
-# TODO install hypr stuff - cursor, graphics, idle, land, lang, lock, paper, utils, scanner, portal
 # TODO is xvideo wayland bridge required?
 # TODO issue with mic not working after plugin headset
 # TODO hwinfo/lstopo
@@ -203,5 +202,16 @@
     vimAlias = true;
     vimdiffAlias = true;
   };
+
+  # TODO (see if working) hypr stuff - home manager bits
+  home.pointerCursor = {
+    name = "Qogir-dark";
+    package = pkgs.qogir-icon-theme;
+    hyprcursor = {
+      enable = true;
+      size = 24;
+    };
+  };
+  services.hyprpaper.enable = true;
 
 }
