@@ -7,13 +7,12 @@
 # TODO scanning, printing, firewall
 # TODO mpd - music player daemon
 # TODO minecraft
-# TODO nvidia stuff
+# TODO nvidia sleep crashing - fix
 # TODO is xvideo wayland bridge required?
 # TODO issue with mic not working after plugin headset
 # TODO hwinfo/lstopo
 # TODO meld
 # TODO networkmanager ?
-# TODO xwayland ?
 # TODO ungoogled-chromium ?
 # TODO pandoc
 # TODO shellcheck
@@ -85,7 +84,7 @@
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.gimp
-    pkgs.kdePackages.kdenlive # TODO fix opengl thing
+    pkgs.kdePackages.kdenlive
     pkgs.libreoffice-qt-fresh
     pkgs.kdiskmark
     pkgs.zathura
@@ -102,7 +101,6 @@
     pkgs.calibre
     pkgs.pwvucontrol
     # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
-    # pkgs.kitty # TODO figure out how to set this and see if this needs to be set somewhere else
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
     # TODO might need to add xorg-xhost for the above stuff or look for options
@@ -213,5 +211,8 @@
     };
   };
   services.hyprpaper.enable = true;
+
+  # TODO best kitty configuration
+  # programs.kitty.enable = true;
 
 }
