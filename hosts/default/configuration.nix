@@ -165,6 +165,12 @@
       enable = true;
       enableUserService = true;
     };
+    udev.extraHwdb = ''
+      evdev:name:*:dmi:bvn*:bvr*:bd*:svnASUS*:pn*:*
+       KEYBOARD_KEY_ff31007c=f20    # fixes mic mute button
+       KEYBOARD_KEY_ff3100b2=home   # Set fn+LeftArrow as Home
+       KEYBOARD_KEY_ff3100b3=end    # Set fn+RightArrow as End
+    '';
 
     flatpak.enable = true;
   };
@@ -204,5 +210,24 @@
 
   # enabling power profiles daemon
   services.power-profiles-daemon.enable = true;
+
+  # nvidia
+  hardware.nvidia = {
+    modesetting.enable = true;
+
+    dynamicBoost.enable = true;
+
+    prime = {
+      amdgpuBusId = "PCI:4:0:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
+
+    powerManagement = {
+      enable = true;
+      finegrained = true;
+    };
+
+    nvidiaSettings = true;
+  };
 
 }
