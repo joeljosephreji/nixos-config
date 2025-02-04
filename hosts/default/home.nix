@@ -1,23 +1,5 @@
 { config, pkgs, ... }:
 
-# TODO figure out firefox options
-# TODO figure out how to theme gtk (nwlook) and qt applications - use catpuccin (refer to repo if needed)
-# TODO lookup nixos wiki on bluetooth (blueman)
-# TODO flatpak support and flatseal - see if flatpak packages can be automated
-# TODO scanning, printing, firewall
-# TODO mpd - music player daemon
-# TODO minecraft
-# TODO nvidia sleep crashing - fix
-# TODO is xvideo wayland bridge required?
-# TODO issue with mic not working after plugin headset
-# TODO hwinfo/lstopo
-# TODO meld
-# TODO networkmanager ?
-# TODO ungoogled-chromium ?
-# TODO pandoc
-# TODO shellcheck
-# TODO bottles
-# TODO default applications xdg.mime
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -114,7 +96,8 @@
 
     # music
     pkgs.spotube
-    # pkgs.kdePackages.audiotube # not working
+    # pkgs.kdePackages.audiotube # TODO still not working
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -215,5 +198,29 @@
 
   # TODO best kitty configuration
   # programs.kitty.enable = true;
+
+  # zsh
+  # programs.zsh = {
+    # enable = true;
+  # };
+
+# TODO figure out firefox options
+# TODO figure out how to theme gtk (nwlook) and qt applications - use catpuccin (refer to repo if needed)
+# TODO lookup nixos wiki on bluetooth (blueman)
+# TODO flatpak support and flatseal - see if flatpak packages can be automated
+# TODO scanning, printing, firewall
+# TODO mpd - music player daemon
+# TODO minecraft
+# TODO nvidia sleep crashing - fix
+# TODO is xvideo wayland bridge required?
+# TODO issue with mic not working after plugin headset
+# TODO hwinfo/lstopo
+# TODO meld
+# TODO networkmanager ?
+# TODO ungoogled-chromium ?
+# TODO pandoc
+# TODO shellcheck
+# TODO bottles
+# TODO default applications xdg.mime
 
 }
