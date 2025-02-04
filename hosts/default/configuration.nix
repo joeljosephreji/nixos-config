@@ -88,9 +88,9 @@
   networkmanagerapplet
   brightnessctl
   playerctl
-  toybox
+  coreutils-full
   unzip
-  #  wget
+  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
