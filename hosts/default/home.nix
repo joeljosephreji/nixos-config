@@ -198,6 +198,7 @@
   # command line utils
   programs = {
     # zsh
+    # TODO figure out how to theme zsh (like in the dotfiles repo)
     zsh = {
       enable = true;
       autocd = true;
@@ -262,7 +263,7 @@
   };
 
 # TODO figure out firefox options
-# TODO figure out how to theme gtk (nwlook) and qt applications - use catpuccin (refer to repo if needed)
+# TODO use catpuccin nix (refer to repo if needed) figure out how to theme gtk (nwlook) and qt applications
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall
