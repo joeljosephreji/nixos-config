@@ -51,6 +51,9 @@
     pkgs.pipenv
     pkgs.conda
     pkgs.nodejs-slim
+    pkgs.lua51Packages.lua
+    pkgs.lua51Packages.luarocks_bootstrap
+    pkgs.tree-sitter
 
     # command line utils
     pkgs.oh-my-posh
