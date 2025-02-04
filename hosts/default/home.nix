@@ -39,7 +39,7 @@
   home.packages = [
     # tools for window manager
     pkgs.stow
-    pkgs.waybar
+    pkgs.waybar # TODO fix the issue with the white colour on hovering on hyprland workspace buttons
     pkgs.rofi-wayland
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
