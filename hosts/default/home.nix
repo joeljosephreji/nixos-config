@@ -51,6 +51,7 @@
     pkgs.yazi
     pkgs.btop
     pkgs.wl-clipboard
+    # pkgs.psmisc # TODO killall not working
 
     # programming software
     pkgs.minizinc

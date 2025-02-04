@@ -91,7 +91,6 @@
   coreutils-full
   unzip
   wget
-  psmisc
   pciutils
   ];
 
