@@ -111,6 +111,8 @@
 
   # Hyprland
   programs.hyprland.enable = true;
+  programs.hyprlock.enable = true; # for screen lock
+  services.hypridle.enable = true; # automatically turning off the screen
 
   # List services that you want to enable:
 
