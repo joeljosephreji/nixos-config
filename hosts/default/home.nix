@@ -39,11 +39,6 @@
     # command line utils
     pkgs.oh-my-posh
     pkgs.eza
-    pkgs.zoxide
-    pkgs.fzf
-    pkgs.jq
-    pkgs.fd
-    pkgs.ripgrep
     pkgs.newsraft
     pkgs.bat
 
@@ -200,10 +195,71 @@
   # TODO best kitty configuration
   # programs.kitty.enable = true;
 
-  # zsh
-  # programs.zsh = {
-    # enable = true;
-  # };
+  # command line utils
+  programs = {
+    # zsh
+    zsh = {
+      enable = true;
+      autocd = true;
+      defaultKeymap = "viins";
+      dotDir = ".config/zsh";
+      enableCompletion = true;
+      history = {
+        path = "$HOME/.zsh_history";
+        expireDuplicatesFirst = true;
+        append = true;
+        share = true;
+        ignoreSpace = true;
+        ignoreAllDups = true;
+        saveNoDups = true;
+        ignoreDups = true;
+        findNoDups = true;
+      };
+      autosuggestion = {
+        enable = true;
+        strategy = [
+          "history"
+          "completion"
+        ];
+      };
+      syntaxHighlighting.enable = true;
+      initExtra = ''
+        # ls to have colour by default and grouped by directories first
+        if command -v eza &> /dev/null; then    # if eza is available, use it instead
+          alias ls="eza --group-directories-first"
+        else
+          alias ls="ls --color --group-directories-first" # otherwise use ls color
+        fi
+
+        eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.toml)"
+      '';
+      # TODO see if completion styling can be added above
+      # zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+    };
+
+    fzf = {
+      enable = true;
+      colors = {
+        "bg" = "#1e1e2e";
+        "bg+" = "#313244";
+        "fg" = "#cdd6f4";
+        "fg+" = "#cdd6f4";
+        "spinner" = "#f5e0dc";
+        "hl" = "#f38ba8";
+        "hl+" = "#f38ba8";
+        "header" = "#f38ba8";
+        "info" = "#cba6f7";
+        "pointer" = "#f5e0dc";
+        "marker" = "#f5e0dc";
+        "prompt" = "#cba6f7";
+      };
+    };
+    zoxide.enable = true;
+    jq.enable = true;
+    fd.enable = true;
+    ripgrep.enable = true;
+  };
 
 # TODO figure out firefox options
 # TODO figure out how to theme gtk (nwlook) and qt applications - use catpuccin (refer to repo if needed)
@@ -223,5 +279,6 @@
 # TODO shellcheck
 # TODO bottles
 # TODO default applications xdg.mime
+# TODO restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
 
 }
