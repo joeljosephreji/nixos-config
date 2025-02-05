@@ -262,6 +262,12 @@
     ripgrep.enable = true;
   };
 
+  # ollama
+  services.ollama = {
+    enable = true;
+    acceleration = "cuda";
+  };
+
 # TODO figure out firefox options
 # TODO use catpuccin nix (refer to repo if needed) figure out how to theme gtk (nwlook) and qt applications
 # TODO lookup nixos wiki on bluetooth (blueman)
