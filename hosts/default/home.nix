@@ -269,6 +269,7 @@
   };
 
 # TODO figure out firefox options
+# TODO syncthing
 # TODO use catpuccin nix (refer to repo if needed) figure out how to theme gtk (nwlook) and qt applications
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
@@ -290,5 +291,6 @@
 # TODO check virtualisation - virt manager and the like
 # TODO issue with mic not working after plugin headset
 # TODO try to fix the cursor not switching issue when using bindkey -v in zsh
+# TODO podman, distrobox
 
 }
