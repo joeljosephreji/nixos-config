@@ -268,6 +268,12 @@
     acceleration = "cuda";
   };
 
+  # syncthing
+  services.syncthing = {
+    enable = true;
+  };
+
+
 # TODO figure out firefox options
 # TODO syncthing
 # TODO exfat
