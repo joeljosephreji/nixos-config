@@ -281,7 +281,7 @@
 # TODO use catpuccin nix (refer to repo if needed) figure out how to theme gtk (nwlook) and qt applications
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
-# TODO scanning, printing, firewall
+# TODO scanning, printing, firewall - install firewalld, zones, etc
 # TODO mpd - music player daemon
 # TODO minecraft
 # TODO nvidia sleep crashing - fix
