@@ -201,7 +201,7 @@
   services.udisks2.enable = true;
   services.gvfs.enable = true;
 
-  # kdeconnect
+  # kdeconnect - TODO clipboard sync not working
   programs.kdeconnect.enable = true;
 
   # polkit
