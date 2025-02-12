@@ -275,6 +275,9 @@
     enable = true;
   };
 
+  # lazygit
+  programs.lazygit.enable = true;
+
 
 # TODO figure out firefox options
 # TODO syncthing
