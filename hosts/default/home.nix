@@ -39,13 +39,14 @@
     # command line utils
     pkgs.oh-my-posh
     pkgs.eza
-    pkgs.newsraft
     pkgs.bat
 
     # command line applications
     pkgs.yazi
     pkgs.btop
     pkgs.wl-clipboard
+    pkgs.newsraft
+    pkgs.castero
     # pkgs.psmisc # TODO killall not working
 
     # programming software
