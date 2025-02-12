@@ -214,7 +214,7 @@
   # enabling power profiles daemon
   services.power-profiles-daemon.enable = true;
 
-  # nvidia
+  # nvidia - TODO probably not working, might need to investigate, hunch is that nvidia version isn't compatible with the kernel used
   hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
     modesetting.enable = true;
