@@ -46,7 +46,6 @@
     pkgs.btop
     pkgs.wl-clipboard
     pkgs.newsraft
-    # pkgs.castero # TODO not building because of setuptools python error
     # pkgs.psmisc # TODO killall not working
 
     # programming software
@@ -81,6 +80,7 @@
     pkgs.calibre
     pkgs.pwvucontrol
     pkgs.libnotify
+    pkgs.kdePackages.kasts
     # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
