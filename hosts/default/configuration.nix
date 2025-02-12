@@ -215,6 +215,7 @@
   services.power-profiles-daemon.enable = true;
 
   # nvidia
+  hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
     modesetting.enable = true;
 
