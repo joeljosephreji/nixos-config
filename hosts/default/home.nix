@@ -80,6 +80,7 @@
     pkgs.wezterm
     pkgs.calibre
     pkgs.pwvucontrol
+    pkgs.libnotify
     # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
