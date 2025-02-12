@@ -46,7 +46,7 @@
     pkgs.btop
     pkgs.wl-clipboard
     pkgs.newsraft
-    pkgs.castero
+    # pkgs.castero # TODO not building because of setuptools python error
     # pkgs.psmisc # TODO killall not working
 
     # programming software
