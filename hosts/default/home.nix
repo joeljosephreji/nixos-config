@@ -82,7 +82,6 @@
     pkgs.pwvucontrol
     pkgs.libnotify
     pkgs.kdePackages.kasts
-    # pkgs.kdePackages.kdeconnect-kde # TODO figure out how to set this
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
     # TODO might need to add xorg-xhost for the above stuff or look for options
@@ -295,7 +294,7 @@
 
 # TODO figure out firefox options
 # TODO exfat
-# TODO use catppuccin nix sddm, check gtk later
+# TODO use catppuccin nix sddm, check gtk later; adapt icon theme for it
 # TODO global dark theme
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
@@ -317,5 +316,6 @@
 # TODO issue with mic not working after plugin headset
 # TODO try to fix the cursor not switching issue when using bindkey -v in zsh
 # TODO podman, distrobox
+# TODO nvtop install
 
 }
