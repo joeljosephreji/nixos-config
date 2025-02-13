@@ -96,6 +96,9 @@
     pkgs.spotube
     # pkgs.kdePackages.audiotube # TODO still not working
 
+    # games
+    pkgs.prismlauncher # por minecraft
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -292,7 +295,6 @@
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall - install firewalld, zones, etc
 # TODO mpd - music player daemon
-# TODO minecraft
 # TODO nvidia sleep crashing - fix
 # TODO cuda setup
 # TODO is xvideo wayland bridge required?
