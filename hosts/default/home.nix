@@ -167,9 +167,13 @@
   # flameshot
   services.flameshot = {
     enable = true;
+    package = pkgs.flameshot.override {
+      enableWlrSupport = true; # TODO remove once it becomes the default
+    };
     settings = {
       General = {
-        disabledGrimWarning = true; # TODO not working/remove when solution is there in future
+        showStartupLaunchMessage = false;
+        disabledGrimWarning = true;
       };
     };
   };
