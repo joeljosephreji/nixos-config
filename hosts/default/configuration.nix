@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      inputs.catppuccin.nixosModules.catppuccin
     ];
 
   # Flakes and nix command
@@ -133,6 +134,7 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
+    package = pkgs.kdePackages.sddm;
   };
 
   # Enable the OpenSSH daemon.
@@ -157,7 +159,12 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     users = {
-      "kierkegaard" = import ./home.nix;
+      "kierkegaard" = {
+          imports = [
+            ./home.nix
+            inputs.catppuccin.homeManagerModules.catppuccin
+          ];
+      };
     };
   };
 
@@ -262,5 +269,11 @@
 
   # Allow cuda support
   nixpkgs.config.cudaSupport = true;
+
+  # catppuccin
+  catppuccin = {
+    enable = true;
+    sddm.enable = false;
+  };
 
 }
