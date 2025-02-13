@@ -40,6 +40,7 @@
     pkgs.oh-my-posh
     pkgs.eza
     pkgs.bat
+    pkgs.tlrc # tldr but rust
 
     # command line applications
     pkgs.yazi
@@ -289,9 +290,11 @@
     style.name = "kvantum";
   };
 
+  # tldr updates
+  services.tldr-update.enable = true;
+
 # TODO figure out firefox options
 # TODO exfat
-# TODO tldr
 # TODO use catppuccin nix sddm, check gtk later
 # TODO global dark theme
 # TODO lookup nixos wiki on bluetooth (blueman)
