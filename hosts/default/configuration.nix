@@ -109,7 +109,11 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Hyprland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
   programs.hyprlock.enable = true; # for screen lock
   services.hypridle.enable = true; # automatically turning off the screen
 
