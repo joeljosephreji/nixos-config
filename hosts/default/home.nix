@@ -290,10 +290,10 @@
   };
 
 # TODO figure out firefox options
-# TODO syncthing
 # TODO exfat
 # TODO tldr
-# TODO use catppuccin nix (refer to repo if needed, maybe vimjoyer's video on stylix as well) figure out how to theme gtk (nwlook) and qt applications
+# TODO use catppuccin nix sddm, check gtk later
+# TODO global dark theme
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall - install firewalld, zones, etc

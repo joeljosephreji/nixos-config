@@ -243,7 +243,7 @@
   # enabling power profiles daemon
   services.power-profiles-daemon.enable = true;
 
-  # nvidia - TODO seems to be not working well with my gpu
+  # nvidia - TODO powermgmt seems to be not working well with my gpu
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
