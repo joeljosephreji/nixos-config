@@ -14,6 +14,16 @@
   # Flakes and nix command
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # cache for cuda libraries
+  nix.settings = {
+    substituters = [
+      "https://nix-community.cachix.org"
+    ];
+    trusted-public-keys = [
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+    ];
+  };
+
   # Bootloader.
   boot.loader = {
     efi.canTouchEfiVariables = true;
@@ -218,14 +228,18 @@
   # enabling power profiles daemon
   services.power-profiles-daemon.enable = true;
 
-  # nvidia - TODO probably not working, might need to investigate, hunch is that nvidia version isn't compatible with the kernel used
+  # nvidia - TODO seems to be not working well with my gpu
+  services.xserver.videoDrivers = [ "nvidia" ];
   hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
+    open = true;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
     modesetting.enable = true;
 
     dynamicBoost.enable = true;
 
     prime = {
+      offload.enable = true;
       amdgpuBusId = "PCI:4:0:0";
       nvidiaBusId = "PCI:1:0:0";
     };
@@ -237,5 +251,8 @@
 
     nvidiaSettings = true;
   };
+
+  # Allow cuda support
+  # nixpkgs.config.cudaSupport = true;
 
 }
