@@ -170,9 +170,17 @@
       fira-code
       fira-sans
       font-awesome
-      # fira-go # apparently building the fonts and not working
-      # fira-math # apparently building the fonts and not working
+      merriweather
+      fira-go
+      fira-math
     ];
+    fontconfig = {
+      defaultFonts = {
+        serif = [  "Merriweather" ];
+        sansSerif = [ "FiraGO" "Fira Sans" ];
+        monospace = [ "FiraCode Nerd" ];
+      };
+    };
   };
 
   services = {
