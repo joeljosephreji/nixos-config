@@ -275,6 +275,18 @@
   catppuccin = {
     enable = true;
     nvim.enable = false;
+    gtk.enable = true;
+    kvantum = {
+      apply = true;
+      enable = true;
+    };
+  };
+
+  # qt theme
+  qt = {
+    enable = true;
+    platformTheme.name = "kvantum";
+    style.name = "kvantum";
   };
 
 # TODO figure out firefox options
