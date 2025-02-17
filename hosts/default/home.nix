@@ -99,6 +99,11 @@
     # games
     pkgs.prismlauncher # por minecraft
 
+    # icon theme
+    (pkgs.catppuccin-papirus-folders.override {
+      accent = "mauve";
+    })
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -192,8 +197,6 @@
 
   # TODO (see if working) hypr stuff - home manager bits
   home.pointerCursor = {
-    name = "Qogir-dark";
-    package = pkgs.qogir-icon-theme;
     hyprcursor = {
       enable = true;
       size = 24;
@@ -278,6 +281,9 @@
     gtk.enable = true;
     kvantum = {
       apply = true;
+      enable = true;
+    };
+    cursors = {
       enable = true;
     };
   };
