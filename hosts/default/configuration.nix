@@ -251,7 +251,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.beta;
     modesetting.enable = true;
 
-    dynamicBoost.enable = true;
+    dynamicBoost.enable = false; # error coming up in powerd service
 
     prime = {
       offload.enable = true;
