@@ -177,15 +177,19 @@
       fira-code
       fira-sans
       font-awesome
-      merriweather
       fira-go
       fira-math
+      merriweather
+      merriweather-sans
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
     ];
     fontconfig = {
       defaultFonts = {
-        serif = [  "Merriweather" ];
-        sansSerif = [ "FiraGO" "Fira Sans" ];
-        monospace = [ "FiraCode Nerd" ];
+        serif = [ "Noto Serif Malayalam" "Merriweather" ];
+        sansSerif = [ "Noto Sans Malayalam" "Merriweather Sans" "FiraGO" "Fira Sans" ];
+        monospace = [ "FiraCode Nerd Font" "FiraMono Nerd Font" "Noto Sans Mono" ];
       };
     };
   };
