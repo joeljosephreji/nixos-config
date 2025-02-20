@@ -318,7 +318,6 @@
 # TODO bottles
 # TODO default applications xdg.mime
 # TODO restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
-# TODO check virtualisation - virt manager and the like
 # TODO issue with mic not working after plugin headset
 # TODO try to fix the cursor not switching issue when using bindkey -v in zsh
 # TODO podman, distrobox
