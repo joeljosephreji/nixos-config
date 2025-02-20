@@ -195,8 +195,8 @@
     vimdiffAlias = true;
   };
 
-  # TODO (see if working) hypr stuff - home manager bits
   home.pointerCursor = {
+    gtk.enable = true;
     hyprcursor = {
       enable = true;
       size = 24;
@@ -299,15 +299,15 @@
   services.tldr-update.enable = true;
 
 # TODO figure out firefox options
-# TODO exfat
 # TODO use catppuccin nix sddm, check gtk later; adapt icon theme for it
 # TODO global dark theme
 # TODO lookup nixos wiki on bluetooth (blueman)
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall - install firewalld, zones, etc
 # TODO mpd - music player daemon
-# TODO nvidia sleep crashing - fix
-# TODO cuda setup
+# TODO kernel panic when opening pdf -> opening librewolf -> crash
+# TODO maybe save logs from previous boot as well?
+# TODO pytorch - also if cuda is working alongside
 # TODO is xvideo wayland bridge required?
 # TODO hwinfo/lstopo
 # TODO meld

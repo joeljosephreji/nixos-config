@@ -83,7 +83,7 @@
   users.users.kierkegaard = {
     isNormalUser = true;
     description = "kierkegaard";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
     packages = with pkgs; [];
   };
 
@@ -280,4 +280,7 @@
     sddm.enable = false;
   };
 
+  # virtualisation
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }
