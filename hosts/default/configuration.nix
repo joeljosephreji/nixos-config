@@ -55,7 +55,7 @@
   networking.networkmanager.enable = true;
 
   # Set your time zone.
-  time.timeZone = "Asia/Kolkata";
+  time.timeZone = "Australia/Melbourne";
 
   # Select internationalisation properties.
   # TODO check later to see if Indian locale has utf8
@@ -286,4 +286,9 @@
     qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
   };
   programs.virt-manager.enable = true;
+
+  # bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
 }
