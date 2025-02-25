@@ -41,6 +41,7 @@
     pkgs.eza
     pkgs.bat
     pkgs.tlrc # tldr but rust
+    pkgs.hyprpicker
 
     # command line applications
     pkgs.yazi
