@@ -31,7 +31,7 @@
     pkgs.python3Minimal
     pkgs.pipenv
     pkgs.conda
-    pkgs.nodejs-slim
+    pkgs.nodejs_22
     pkgs.lua51Packages.lua
     pkgs.lua51Packages.luarocks_bootstrap
     pkgs.tree-sitter
