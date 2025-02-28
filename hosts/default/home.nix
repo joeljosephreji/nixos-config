@@ -31,9 +31,9 @@
     pkgs.python3Minimal
     pkgs.pipenv
     pkgs.conda
-    pkgs.nodejs_22
-    pkgs.lua51Packages.lua
-    pkgs.lua51Packages.luarocks_bootstrap
+    pkgs.nodejs
+    pkgs.lua51Packages.lua # for neovim
+    pkgs.lua51Packages.luarocks_bootstrap # for neovim
     pkgs.tree-sitter
 
     # command line utils
