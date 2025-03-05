@@ -64,6 +64,7 @@
     pkgs.copyq
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
+    pkgs.slurp
     pkgs.gimp
     pkgs.kdePackages.kdenlive
     pkgs.libreoffice-qt-fresh
@@ -298,6 +299,9 @@
 
   # tldr updates
   services.tldr-update.enable = true;
+
+  # life without xdg is difficult
+  xdg.enable = true;
 
 # TODO figure out firefox options
 # TODO use catppuccin nix sddm, check gtk later; adapt icon theme for it
