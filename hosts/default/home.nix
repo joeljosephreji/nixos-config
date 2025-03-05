@@ -301,7 +301,10 @@
   services.tldr-update.enable = true;
 
   # life without xdg is difficult
-  xdg.enable = true;
+  xdg = {
+      enable = true;
+      userDirs.enable = true;
+  };
 
 # TODO figure out firefox options
 # TODO use catppuccin nix sddm, check gtk later; adapt icon theme for it
