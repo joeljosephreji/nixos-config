@@ -304,13 +304,17 @@
   xdg = {
     enable = true;
     userDirs.enable = true;
+
+    # default filetype handlers
     mimeApps = {
       enable = true;
       associations.added = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
+        "text/plain" = ["nvim.desktop"];
       };
       defaultApplications = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
+        "text/plain" = ["nvim.desktop"];
       };
     };
   };
