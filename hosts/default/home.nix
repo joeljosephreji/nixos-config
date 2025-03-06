@@ -302,8 +302,17 @@
 
   # life without xdg is difficult
   xdg = {
+    enable = true;
+    userDirs.enable = true;
+    mimeApps = {
       enable = true;
-      userDirs.enable = true;
+      associations.added = {
+        "application/pdf" = ["org.pwmt.zathura.desktop"];
+      };
+      defaultApplications = {
+        "application/pdf" = ["org.pwmt.zathura.desktop"];
+      };
+    };
   };
 
 # TODO figure out firefox options
