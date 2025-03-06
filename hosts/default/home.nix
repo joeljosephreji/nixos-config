@@ -76,7 +76,6 @@
     pkgs.localsend
     pkgs.obs-studio # TODO check if flatpak is a better option
     pkgs.qbittorrent
-    pkgs.qutebrowser
     pkgs.shortwave
     pkgs.tenacity
     pkgs.wezterm
@@ -316,6 +315,16 @@
         "application/pdf" = ["org.pwmt.zathura.desktop"];
         "text/plain" = ["nvim.desktop"];
       };
+    };
+  };
+
+  programs.qutebrowser = {
+    enable = true;
+    searchEngines = {
+      DEFAULT = "https://search.brave.com/search?q=%s";
+      w = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
+      aw = "https://wiki.archlinux.org/?search={}";
+      nw = "https://wiki.nixos.org/index.php?search={}";
     };
   };
 
