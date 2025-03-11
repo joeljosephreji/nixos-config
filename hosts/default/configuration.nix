@@ -187,9 +187,9 @@
     ];
     fontconfig = {
       defaultFonts = {
-        serif = [ "Noto Serif Malayalam" "Merriweather" ];
-        sansSerif = [ "Noto Sans Malayalam" "Merriweather Sans" "FiraGO" "Fira Sans" ];
-        monospace = [ "FiraCode Nerd Font" "FiraMono Nerd Font" "Noto Sans Mono" ];
+        serif = [ "Merriweather" "Noto Serif Malayalam" ];
+        sansSerif = [ "FiraGO" "Noto Sans Malayalam" ];
+        monospace = [ "FiraCode Nerd Font" "FiraMono Nerd Font" ];
       };
     };
   };
