@@ -327,7 +327,7 @@
   programs.qutebrowser = {
     enable = true;
     searchEngines = {
-      DEFAULT = "https://search.brave.com/search?q=%s";
+      DEFAULT = "https://search.brave.com/search?q={}";
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
       nw = "https://wiki.nixos.org/index.php?search={}";
