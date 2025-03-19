@@ -25,6 +25,9 @@
     ];
   };
 
+  # because building is a pain and it is causing memory issues
+  nix.settings.build-dir = "/nix/build-sandbox";
+
   # Bootloader.
   boot.loader = {
     efi.canTouchEfiVariables = true;
