@@ -20,7 +20,7 @@
   home.packages = [
     # tools for window manager
     pkgs.stow
-    pkgs.waybar # TODO fix the issue with the white colour on hovering on hyprland workspace buttons
+    pkgs.waybar # TODO fix the issue with the white colour on hovering on hyprland workspace buttons, also issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
     pkgs.rofi-wayland
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
@@ -335,28 +335,24 @@
   };
 
 # TODO figure out firefox options
-# TODO use catppuccin nix sddm, check gtk later; adapt icon theme for it
-# TODO global dark theme
-# TODO lookup nixos wiki on bluetooth (blueman)
+# TODO use catppuccin nix sddm, gtk not working; adapt icon theme for it
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall - install firewalld, zones, etc
 # TODO mpd - music player daemon
 # TODO kernel panic when opening pdf -> opening librewolf -> crash
 # TODO maybe save logs from previous boot as well?
-# TODO pytorch - also if cuda is working alongside
 # TODO is xvideo wayland bridge required?
 # TODO hwinfo/lstopo
 # TODO meld
-# TODO networkmanager ?
-# TODO ungoogled-chromium ?
 # TODO pandoc
 # TODO shellcheck
 # TODO bottles
-# TODO default applications xdg.mime
 # TODO restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
 # TODO issue with mic not working after plugin headset
 # TODO try to fix the cursor not switching issue when using bindkey -v in zsh
 # TODO podman, distrobox
 # TODO nvtop install
+# TODO conda-shell figure out zsh
+# TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
 
 }
