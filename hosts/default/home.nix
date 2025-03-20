@@ -31,6 +31,9 @@
     pkgs.python3Minimal
     pkgs.pipenv
     pkgs.conda
+    # (pkgs.conda.overrideAttrs (oldAttrs: {
+        # runScript = "zsh -l";
+    # }))
     pkgs.nodejs
     pkgs.lua51Packages.lua # for neovim
     pkgs.lua51Packages.luarocks_bootstrap # for neovim
