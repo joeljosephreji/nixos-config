@@ -280,7 +280,7 @@
   # catppuccin
   catppuccin = {
     enable = true;
-    sddm.enable = false;
+    # sddm.enable = false;
   };
 
   # virtualisation
