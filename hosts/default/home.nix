@@ -357,5 +357,6 @@
 # TODO nvtop install
 # TODO conda-shell figure out zsh
 # TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
+# TODO kdenlive not being able to use GPU rendering. check for price.
 
 }
