@@ -294,4 +294,18 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
+
+  # nix automatic garbage collecting
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    options = "--delete-older-than 3d";
+  };
+
+  # nix store automatic optimisation to save space
+  nix.optimise = {
+    automatic = true;
+    dates = [ "weekly" ];
+  };
+
 }
