@@ -303,6 +303,7 @@
   };
 
   # nix store automatic optimisation to save space
+  nix.settings.auto-optimise-store = true; # happens during each builds so slows things down
   nix.optimise = {
     automatic = true;
     dates = [ "weekly" ];
