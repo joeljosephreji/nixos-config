@@ -48,7 +48,7 @@
 
     # command line applications
     pkgs.yazi
-    pkgs.btop
+    pkgs.btop-cuda
     pkgs.wl-clipboard
     pkgs.newsraft
     # pkgs.psmisc # TODO killall not working
@@ -69,7 +69,7 @@
     pkgs.grim
     pkgs.slurp
     pkgs.gimp
-    pkgs.kdePackages.kdenlive
+    # pkgs.kdePackages.kdenlive
     pkgs.libreoffice-qt-fresh
     pkgs.kdiskmark
     pkgs.zathura
@@ -77,7 +77,7 @@
     pkgs.mpv
     pkgs.vlc
     pkgs.localsend
-    pkgs.obs-studio # TODO check if flatpak is a better option
+    # pkgs.obs-studio # TODO check if flatpak is a better option
     pkgs.qbittorrent
     pkgs.shortwave
     pkgs.tenacity
@@ -358,5 +358,6 @@
 # TODO conda-shell figure out zsh
 # TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
 # TODO kdenlive not being able to use GPU rendering. check for price.
+# TODO install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
 
 }

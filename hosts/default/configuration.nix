@@ -275,7 +275,7 @@
   };
 
   # Allow cuda support
-  nixpkgs.config.cudaSupport = true;
+  nixpkgs.config.cudaSupport = false; # TODO taking too long to compile stuff, maybe come back to it later?
 
   # catppuccin
   catppuccin = {
