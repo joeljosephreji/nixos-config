@@ -316,6 +316,8 @@
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = ["writer.desktop"];
         "application/vnd.oasis.opendocument.text" = ["writer.desktop"];
         "inode/directory" = ["pcmanfm-qt.desktop"];
+        "image/jpeg" = ["vimiv.desktop"];
+        "image/png" = ["vimiv.desktop"];
       };
       defaultApplications = {
         "application/pdf" = ["org.pwmt.zathura.desktop"];
@@ -323,6 +325,8 @@
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = ["writer.desktop"];
         "application/vnd.oasis.opendocument.text" = ["writer.desktop"];
         "inode/directory" = ["pcmanfm-qt.desktop"];
+        "image/jpeg" = ["vimiv.desktop"];
+        "image/png" = ["vimiv.desktop"];
       };
     };
   };
