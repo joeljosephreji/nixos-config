@@ -64,7 +64,6 @@
     pkgs.zotero
     pkgs.lxqt.pcmanfm-qt
     pkgs.protonvpn-gui
-    pkgs.copyq
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.slurp
@@ -339,6 +338,11 @@
       aw = "https://wiki.archlinux.org/?search={}";
       nw = "https://wiki.nixos.org/index.php?search={}";
     };
+  };
+
+  services.copyq = {
+    enable = true;
+    forceXWayland = false;
   };
 
 # TODO figure out firefox options
