@@ -90,7 +90,7 @@
     # TODO might need to add xorg-xhost for the above stuff or look for options
 
     # messengers
-    pkgs.signal-desktop
+    pkgs.signal-desktop-bin
     pkgs.element-desktop
     pkgs.discord
     pkgs.slack
