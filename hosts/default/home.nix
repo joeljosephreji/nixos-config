@@ -42,7 +42,6 @@
     # command line utils
     pkgs.oh-my-posh
     pkgs.eza
-    pkgs.bat
     pkgs.tlrc # tldr but rust
     pkgs.hyprpicker
 
@@ -344,7 +343,11 @@
     forceXWayland = false;
   };
 
-  programs.yazi.enable = true;
+  # command line applications
+  programs = {
+    yazi.enable = true;
+    bat.enable = true;
+  };
 
 # TODO figure out firefox options
 # TODO catppuccin nix gtk not working; adapt icon theme for it
