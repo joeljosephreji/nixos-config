@@ -47,7 +47,6 @@
     pkgs.hyprpicker
 
     # command line applications
-    pkgs.yazi
     pkgs.btop-cuda
     pkgs.wl-clipboard
     pkgs.newsraft
@@ -345,8 +344,10 @@
     forceXWayland = false;
   };
 
+  programs.yazi.enable = true;
+
 # TODO figure out firefox options
-# TODO use catppuccin nix sddm, gtk not working; adapt icon theme for it
+# TODO catppuccin nix gtk not working; adapt icon theme for it
 # TODO flatpak support and flatseal - see if flatpak packages can be automated
 # TODO scanning, printing, firewall - install firewalld, zones, etc
 # TODO mpd - music player daemon
