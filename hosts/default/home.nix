@@ -61,7 +61,7 @@
     pkgs.flowtime
     pkgs.zotero
     pkgs.lxqt.pcmanfm-qt
-    pkgs.protonvpn-gui
+    # pkgs.protonvpn-gui # TODO add back after this is fixed
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.slurp
@@ -237,7 +237,7 @@
         ];
       };
       syntaxHighlighting.enable = true;
-      initExtra = ''
+      initContent = ''
         # ls to have colour by default and grouped by directories first
         if command -v eza &> /dev/null; then    # if eza is available, use it instead
           alias ls="eza --group-directories-first"
