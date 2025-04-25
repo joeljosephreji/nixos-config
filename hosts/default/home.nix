@@ -44,6 +44,7 @@
     pkgs.eza
     pkgs.tlrc # tldr but rust
     pkgs.hyprpicker
+    pkgs.ncdu # disk analyser
 
     # command line applications
     pkgs.btop-cuda
