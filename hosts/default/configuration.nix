@@ -86,7 +86,7 @@
   users.users.kierkegaard = {
     isNormalUser = true;
     description = "kierkegaard";
-    extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "podman" ];
     packages = with pkgs; [];
   };
 
@@ -284,9 +284,20 @@
   };
 
   # virtualisation
-  virtualisation.libvirtd = {
-    enable = true;
-    qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+    };
+    # Enable common container config files in /etc/containers
+    containers.enable = true;
+    podman = {
+      enable = true;
+      # Create a `docker` alias for podman, to use it as a drop-in replacement
+      dockerCompat = true;
+      # Required for containers under podman-compose to be able to talk to each other.
+      defaultNetwork.settings.dns_enabled = true;
+    };
   };
   programs.virt-manager.enable = true;
 

@@ -45,6 +45,7 @@
     pkgs.tlrc # tldr but rust
     pkgs.hyprpicker
     pkgs.ncdu # disk analyser
+    pkgs.distrobox
 
     # command line applications
     pkgs.btop-cuda
