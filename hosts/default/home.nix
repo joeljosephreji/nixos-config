@@ -367,7 +367,6 @@
 # TODO restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
 # TODO issue with mic not working after plugin headset
 # TODO try to fix the cursor not switching issue when using bindkey -v in zsh
-# TODO podman, distrobox
 # TODO nvtop install
 # TODO conda-shell figure out zsh
 # TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
