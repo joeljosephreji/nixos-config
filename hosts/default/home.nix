@@ -48,7 +48,6 @@
     pkgs.distrobox
 
     # command line applications
-    pkgs.btop-cuda
     pkgs.wl-clipboard
     pkgs.newsraft
     # pkgs.psmisc # TODO killall not working
@@ -358,6 +357,13 @@
   programs = {
     yazi.enable = true;
     bat.enable = true;
+    btop = {
+      enable = true;
+      package = pkgs.btop-cuda;
+      settings = {
+        vim_keys = true;
+      };
+    };
   };
 
 # TODO figure out firefox options
