@@ -338,6 +338,14 @@
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
       aw = "https://wiki.archlinux.org/?search={}";
       nw = "https://wiki.nixos.org/index.php?search={}";
+      nixpkg = "https://search.nixos.org/packages?channel=unstable&query={}";
+      nixopt = "https://search.nixos.org/options?channel=unstable&query={}";
+      nixhm = "https://home-manager-options.extranix.com/?query={}&release=master";
+    };
+    settings = {
+      colors.webpage.preferred_color_scheme = "dark";
+      url.start_pages = "https://search.brave.com/";
+      url.default_page = "https://search.brave.com/";
     };
   };
 
