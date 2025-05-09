@@ -41,7 +41,6 @@
 
     # command line utils
     pkgs.oh-my-posh
-    pkgs.eza
     pkgs.tlrc # tldr but rust
     pkgs.hyprpicker
     pkgs.ncdu # disk analyser
@@ -240,9 +239,7 @@
       syntaxHighlighting.enable = true;
       initContent = ''
         # ls to have colour by default and grouped by directories first
-        if command -v eza &> /dev/null; then    # if eza is available, use it instead
-          alias ls="eza --group-directories-first"
-        else
+        if ! command -v eza &> /dev/null; then    # if eza is available, use it instead
           alias ls="ls --color --group-directories-first" # otherwise use ls color
         fi
 
@@ -253,9 +250,31 @@
 
     };
 
+    # eza
+    eza = {
+      enable = true;
+      colors = "always";
+      git = true;
+      icons = "always";
+      enableZshIntegration = true;
+      extraOptions = [
+        "--group-directories-first"
+      ];
+    };
+
+    btop = {
+      enable = true;
+      package = pkgs.btop-cuda;
+      settings = {
+        vim_keys = true;
+      };
+    };
+
     fzf = {
       enable = true;
     };
+    yazi.enable = true;
+    bat.enable = true;
     zoxide.enable = true;
     jq.enable = true;
     fd.enable = true;
@@ -353,18 +372,14 @@
     forceXWayland = false;
   };
 
-  # command line applications
-  programs = {
-    yazi.enable = true;
-    bat.enable = true;
-    btop = {
-      enable = true;
-      package = pkgs.btop-cuda;
-      settings = {
-        vim_keys = true;
-      };
-    };
+  # automating gc for the user-side as well
+  nix.gc = {
+    automatic = true;
+    frequency = "daily";
+    options = "--delete-older-than 3d";
   };
+
+}
 
 # TODO figure out firefox options
 # TODO catppuccin nix gtk not working; adapt icon theme for it
@@ -389,4 +404,3 @@
 # TODO install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
 # TODO fix logout - figure out the issue when logging out where cursor blinks in a blank screen
 
-}
