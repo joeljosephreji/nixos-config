@@ -387,6 +387,6 @@
 # TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
 # TODO kdenlive not being able to use GPU rendering. check for price.
 # TODO install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
-# TODO figure out the issue when logging out where cursor blinks in a blank screen
+# TODO fix logout - figure out the issue when logging out where cursor blinks in a blank screen
 
 }
