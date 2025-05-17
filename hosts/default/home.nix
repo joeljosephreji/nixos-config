@@ -333,7 +333,7 @@
         "text/plain" = ["nvim.desktop"];
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = ["writer.desktop"];
         "application/vnd.oasis.opendocument.text" = ["writer.desktop"];
-        "inode/directory" = ["pcmanfm-qt.desktop"];
+        "inode/directory" = ["pcmanfm-qt.desktop" "lxqt-archiver.desktop"];
         "image/jpeg" = ["vimiv.desktop"];
         "image/png" = ["vimiv.desktop"];
       };
@@ -345,6 +345,8 @@
         "inode/directory" = ["pcmanfm-qt.desktop"];
         "image/jpeg" = ["vimiv.desktop"];
         "image/png" = ["vimiv.desktop"];
+        "x-scheme-handler/sgnl" = ["signal.desktop"];
+        "x-scheme-handler/signalcaptcha" = ["signal.desktop"];
       };
     };
   };
