@@ -405,4 +405,6 @@
 # TODO kdenlive not being able to use GPU rendering. check for price.
 # TODO install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
 # TODO fix logout - figure out the issue when logging out where cursor blinks in a blank screen
+# TODO see if there are workarounds for autotype by keepassxc
+# TODO solve issue with lsp not working in neovim on nixos
 
