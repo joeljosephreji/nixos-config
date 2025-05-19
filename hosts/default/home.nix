@@ -94,7 +94,7 @@
     pkgs.slack
 
     # music
-    pkgs.spotube
+    # pkgs.spotube # TODO wait for rewrite
     # pkgs.kdePackages.audiotube # TODO still not working
 
     # games
