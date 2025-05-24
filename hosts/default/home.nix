@@ -45,6 +45,9 @@
     pkgs.hyprpicker
     pkgs.ncdu # disk analyser
     pkgs.distrobox
+    pkgs.poppler-utils
+    pkgs.ghostscript
+    pkgs.pdftk
 
     # command line applications
     pkgs.wl-clipboard
