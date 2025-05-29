@@ -48,11 +48,12 @@
     pkgs.poppler-utils
     pkgs.ghostscript
     pkgs.pdftk
+    pkgs.inxi
+    pkgs.wl-clipboard
+    # pkgs.psmisc # TODO killall not working
 
     # command line applications
-    pkgs.wl-clipboard
     pkgs.newsraft
-    # pkgs.psmisc # TODO killall not working
 
     # programming software
     pkgs.minizinc
