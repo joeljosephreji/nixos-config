@@ -50,6 +50,7 @@
     pkgs.pdftk
     pkgs.inxi
     pkgs.wl-clipboard
+    pkgs.nixpkgs-track
     # pkgs.psmisc # TODO killall not working
 
     # command line applications
