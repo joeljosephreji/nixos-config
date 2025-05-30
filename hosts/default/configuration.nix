@@ -236,6 +236,7 @@
   # for mounting external devices
   services.udisks2.enable = true;
   services.gvfs.enable = true;
+  services.devmon.enable = true;
 
   # kdeconnect - TODO file browsing not working
   programs.kdeconnect.enable = true;
