@@ -51,6 +51,7 @@
     pkgs.inxi
     pkgs.wl-clipboard
     pkgs.nixpkgs-track
+    pkgs.ast-grep
     # pkgs.psmisc # TODO killall not working
 
     # command line applications
