@@ -1,11 +1,11 @@
-{ config, pkgs, inputs, ... }:
-# TODO remove following and inputs from the params list once fix is available
-let
-  stable = import inputs.nixpkgs-stable {
-    system = "x86_64-linux";
-    config.allowUnfree = true;
-  };
-in
+{ config, pkgs, ... }:
+# { config, pkgs, inputs, ... }:
+# let
+#   stable = import inputs.nixpkgs-stable {
+#     system = "x86_64-linux";
+#     config.allowUnfree = true;
+#   };
+# in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -365,7 +365,7 @@ in
 
   programs.qutebrowser = {
     enable = true;
-    package = stable.qutebrowser; # TODO remove line once fix is available
+    # package = stable.qutebrowser;
     searchEngines = {
       DEFAULT = "https://search.brave.com/search?q={}";
       w = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
