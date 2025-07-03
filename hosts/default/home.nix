@@ -62,6 +62,7 @@
 
     # command line applications
     pkgs.newsraft
+    pkgs.exercism
 
     # programming software
     pkgs.minizinc
