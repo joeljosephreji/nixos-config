@@ -188,6 +188,7 @@
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
     ];
+    fontDir.enable = true;
     fontconfig = {
       defaultFonts = {
         serif = [ "Merriweather" "Noto Serif Malayalam" ];
