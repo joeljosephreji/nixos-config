@@ -311,7 +311,7 @@
   catppuccin = {
     enable = true;
     nvim.enable = false;
-    gtk.enable = true;
+    # not enabling gtk since it is deprecated
     kvantum = {
       apply = true;
       enable = true;
@@ -321,11 +321,32 @@
     };
   };
 
+  # gtk settings
+  gtk = {
+    enable = true;
+    font = {
+      name = "Noto Sans"; # TODO: of course GTK wouldn't play nice with fonts
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+  };
+
   # qt theme
   qt = {
     enable = true;
     platformTheme.name = "kvantum";
     style.name = "kvantum";
+  };
+
+  # dconf
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
   };
 
   # tldr updates
@@ -396,7 +417,6 @@
 }
 
 # TODO: figure out firefox options
-# TODO: catppuccin nix gtk not working; adapt icon theme for it
 # TODO: flatpak support and flatseal - see if flatpak packages can be automated
 # TODO: scanning, printing, firewall - install firewalld, zones, etc
 # TODO: mpd - music player daemon
