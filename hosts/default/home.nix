@@ -65,7 +65,7 @@
 
     # programming software
     pkgs.minizinc
-    pkgs.minizincide # TODO: check if a desktop file is also provided
+    pkgs.minizincide
 
     # application software and utils
     pkgs.vimiv-qt
