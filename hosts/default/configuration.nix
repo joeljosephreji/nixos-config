@@ -61,7 +61,7 @@
   time.timeZone = "Australia/Melbourne";
 
   # Select internationalisation properties.
-  # TODO check later to see if Indian locale has utf8
+  # TODO: check later to see if Indian locale has utf8
   i18n.defaultLocale = "en_AU.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -238,7 +238,7 @@
   services.gvfs.enable = true;
   services.devmon.enable = true;
 
-  # kdeconnect - TODO file browsing not working
+  # kdeconnect - TODO: file browsing not working
   programs.kdeconnect.enable = true;
 
   # polkit
@@ -251,7 +251,7 @@
   # enabling power profiles daemon
   services.power-profiles-daemon.enable = true;
 
-  # nvidia - TODO powermgmt seems to be not working well with my gpu
+  # nvidia - TODO: powermgmt seems to be not working well with my gpu
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
@@ -276,7 +276,7 @@
   };
 
   # Allow cuda support
-  nixpkgs.config.cudaSupport = false; # TODO taking too long to compile stuff, maybe come back to it later?
+  nixpkgs.config.cudaSupport = false; # TODO: taking too long to compile stuff, maybe come back to it later?
 
   # catppuccin
   catppuccin = {

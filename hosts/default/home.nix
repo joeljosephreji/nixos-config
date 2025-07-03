@@ -26,7 +26,7 @@
   home.packages = [
     # tools for window manager
     pkgs.stow
-    pkgs.waybar # TODO fix the issue with the white colour on hovering on hyprland workspace buttons, also issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
+    pkgs.waybar # TODO: fix the issue with the white colour on hovering on hyprland workspace buttons, also issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
     pkgs.rofi-wayland
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
@@ -58,14 +58,14 @@
     pkgs.wl-clipboard
     pkgs.nixpkgs-track
     pkgs.ast-grep
-    # pkgs.psmisc # TODO killall not working
+    # pkgs.psmisc # TODO: killall not working
 
     # command line applications
     pkgs.newsraft
 
     # programming software
     pkgs.minizinc
-    pkgs.minizincide # TODO check if a desktop file is also provided
+    pkgs.minizincide # TODO: check if a desktop file is also provided
 
     # application software and utils
     pkgs.vimiv-qt
@@ -73,7 +73,7 @@
     pkgs.flowtime
     pkgs.zotero
     pkgs.lxqt.pcmanfm-qt
-    # pkgs.protonvpn-gui # TODO add back after this is fixed
+    # pkgs.protonvpn-gui # TODO: add back after this is fixed
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.slurp
@@ -86,7 +86,7 @@
     pkgs.mpv
     pkgs.vlc
     pkgs.localsend
-    # pkgs.obs-studio # TODO check if flatpak is a better option
+    # pkgs.obs-studio # TODO: check if flatpak is a better option
     pkgs.qbittorrent
     pkgs.shortwave
     pkgs.tenacity
@@ -97,7 +97,7 @@
     pkgs.kdePackages.kasts
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
-    # TODO might need to add xorg-xhost for the above stuff or look for options
+    # TODO: might need to add xorg-xhost for the above stuff or look for options
 
     # messengers
     pkgs.signal-desktop-bin
@@ -106,8 +106,8 @@
     pkgs.slack
 
     # music
-    # pkgs.spotube # TODO wait for rewrite
-    # pkgs.kdePackages.audiotube # TODO still not working
+    # pkgs.spotube # TODO: wait for rewrite
+    # pkgs.kdePackages.audiotube # TODO: still not working
 
     # games
     pkgs.prismlauncher # por minecraft
@@ -189,7 +189,7 @@
   services.flameshot = {
     enable = true;
     package = pkgs.flameshot.override {
-      enableWlrSupport = true; # TODO remove once it becomes the default
+      enableWlrSupport = true; # TODO: remove once it becomes the default
     };
     settings = {
       General = {
@@ -217,13 +217,13 @@
   };
   services.hyprpaper.enable = true;
 
-  # TODO best kitty configuration
+  # TODO: best kitty configuration
   # programs.kitty.enable = true;
 
   # command line utils
   programs = {
     # zsh
-    # TODO figure out how to theme zsh (like in the dotfiles repo)
+    # TODO: figure out how to theme zsh (like in the dotfiles repo)
     zsh = {
       enable = true;
       autocd = true;
@@ -257,7 +257,7 @@
 
         eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.toml)"
       '';
-      # TODO see if completion styling can be added above
+      # TODO: see if completion styling can be added above
       # zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
     };
@@ -319,7 +319,7 @@
     cursors = {
       enable = true;
     };
-    mako.enable = false; # TODO remove after it is fixed
+    mako.enable = false; # TODO: remove after it is fixed
   };
 
   # qt theme
@@ -396,28 +396,28 @@
 
 }
 
-# TODO figure out firefox options
-# TODO catppuccin nix gtk not working; adapt icon theme for it
-# TODO flatpak support and flatseal - see if flatpak packages can be automated
-# TODO scanning, printing, firewall - install firewalld, zones, etc
-# TODO mpd - music player daemon
-# TODO kernel panic when opening pdf -> opening librewolf -> crash
-# TODO maybe save logs from previous boot as well?
-# TODO is xvideo wayland bridge required?
-# TODO hwinfo/lstopo
-# TODO meld
-# TODO pandoc
-# TODO shellcheck
-# TODO bottles
-# TODO restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
-# TODO issue with mic not working after plugin headset
-# TODO try to fix the cursor not switching issue when using bindkey -v in zsh
-# TODO nvtop install
-# TODO conda-shell figure out zsh
-# TODO kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
-# TODO kdenlive not being able to use GPU rendering. check for price.
-# TODO install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
-# TODO fix logout - figure out the issue when logging out where cursor blinks in a blank screen
-# TODO see if there are workarounds for autotype by keepassxc
-# TODO solve issue with lsp not working in neovim on nixos
+# TODO: figure out firefox options
+# TODO: catppuccin nix gtk not working; adapt icon theme for it
+# TODO: flatpak support and flatseal - see if flatpak packages can be automated
+# TODO: scanning, printing, firewall - install firewalld, zones, etc
+# TODO: mpd - music player daemon
+# TODO: kernel panic when opening pdf -> opening librewolf -> crash
+# TODO: maybe save logs from previous boot as well?
+# TODO: is xvideo wayland bridge required?
+# TODO: hwinfo/lstopo
+# TODO: meld
+# TODO: pandoc
+# TODO: shellcheck
+# TODO: bottles
+# TODO: restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
+# TODO: issue with mic not working after plugin headset
+# TODO: try to fix the cursor not switching issue when using bindkey -v in zsh
+# TODO: nvtop install
+# TODO: conda-shell figure out zsh
+# TODO: kdenlive, calibre to have nonCudaPkgs with nixpkgs.config.cudaSupport = false; requires let/overlay etc something like: nonCudaPkgs = import pkgs.path { config.cudaSupport = false; };
+# TODO: kdenlive not being able to use GPU rendering. check for price.
+# TODO: install kdenlive and obs-studio automatically with flatpak - nix-flatpak or declarative-flatpak
+# TODO: fix logout - figure out the issue when logging out where cursor blinks in a blank screen
+# TODO: see if there are workarounds for autotype by keepassxc
+# TODO: solve issue with lsp not working in neovim on nixos
 
