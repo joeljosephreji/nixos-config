@@ -282,6 +282,7 @@
   # catppuccin
   catppuccin = {
     enable = true;
+    accent = "lavender";
     # sddm.enable = false;
   };
 

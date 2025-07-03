@@ -114,7 +114,7 @@
 
     # icon theme
     (pkgs.catppuccin-papirus-folders.override {
-      accent = "mauve";
+      accent = "lavender";
     })
 
     # # Adds the 'hello' command to your environment. It prints a friendly
@@ -310,6 +310,7 @@
   # catppuccin
   catppuccin = {
     enable = true;
+    accent = "lavender";
     nvim.enable = false;
     # not enabling gtk since it is deprecated
     kvantum = {
@@ -318,6 +319,7 @@
     };
     cursors = {
       enable = true;
+      accent = "lavender";
     };
   };
 
