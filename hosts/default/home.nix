@@ -319,7 +319,6 @@
     cursors = {
       enable = true;
     };
-    mako.enable = false; # TODO: remove after it is fixed
   };
 
   # qt theme
