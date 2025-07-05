@@ -26,7 +26,7 @@
   home.packages = [
     # tools for window manager
     pkgs.stow
-    pkgs.waybar # TODO: fix the issue with the white colour on hovering on hyprland workspace buttons, also issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
+    pkgs.waybar # TODO: fix the issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
     pkgs.rofi-wayland
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
@@ -260,6 +260,7 @@
       '';
       # TODO: see if completion styling can be added above
       # zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+      # TODO: zsh not having the different cursors based on vim mode
 
     };
 
