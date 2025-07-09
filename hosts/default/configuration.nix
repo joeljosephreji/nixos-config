@@ -323,4 +323,7 @@
     dates = [ "weekly" ];
   };
 
+  # nix-ld for having mason, other packages managers' binaries
+  programs.nix-ld.enable = true;
+
 }
