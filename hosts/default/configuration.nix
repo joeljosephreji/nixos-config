@@ -323,7 +323,7 @@
     dates = [ "weekly" ];
   };
 
-  # nix-ld for having mason, other packages managers' binaries
+  # TODO: remove after migrating to native nix. nix-ld for having mason, other packages managers' binaries
   programs.nix-ld.enable = true;
 
 }
