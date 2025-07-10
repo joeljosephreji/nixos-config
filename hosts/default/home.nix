@@ -418,6 +418,14 @@
     options = "--delete-older-than 3d";
   };
 
+  # thunderbird email and calendar client
+  programs.thunderbird = {
+    enable = true;
+    profiles.kierkegaard = {
+      isDefault = true;
+    };
+  };
+
 }
 
 # TODO: figure out firefox options
