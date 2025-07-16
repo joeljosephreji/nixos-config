@@ -78,7 +78,7 @@
     pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.slurp
-    pkgs.gimp
+    pkgs.gimp3
     # pkgs.kdePackages.kdenlive
     pkgs.libreoffice-qt-fresh
     pkgs.kdiskmark
