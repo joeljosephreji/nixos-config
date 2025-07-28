@@ -232,7 +232,6 @@
       dotDir = ".config/zsh";
       enableCompletion = true;
       history = {
-        path = "$HOME/.zsh_history";
         expireDuplicatesFirst = true;
         append = true;
         share = true;
