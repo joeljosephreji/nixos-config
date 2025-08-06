@@ -58,6 +58,7 @@
     pkgs.wl-clipboard
     pkgs.nixpkgs-track
     pkgs.ast-grep
+    pkgs.caligula
     # pkgs.psmisc # TODO: killall not working
 
     # command line applications
