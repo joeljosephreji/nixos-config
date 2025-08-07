@@ -329,13 +329,14 @@
   gtk = {
     enable = true;
     font = {
-      name = "Noto Sans"; # TODO: of course GTK wouldn't play nice with fonts
+      name = "IBM Plex Sans"; # TODO: of course GTK wouldn't play nice with fonts
     };
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
+      gtk-hint-font-metrics = 1;
     };
   };
 
