@@ -177,24 +177,21 @@
     packages = with pkgs; [
       nerd-fonts.fira-code
       nerd-fonts.fira-mono
+      nerd-fonts.symbols-only
+      nerd-fonts.im-writing
       fira-code
       fira-sans
-      font-awesome
       fira-go
       fira-math
-      merriweather
-      merriweather-sans
-      noto-fonts
-      noto-fonts-cjk-sans
-      noto-fonts-cjk-serif
+      ibm-plex
       google-fonts
     ];
     fontDir.enable = true;
     fontconfig = {
       defaultFonts = {
-        serif = [ "Merriweather" "Noto Serif Malayalam" ];
-        sansSerif = [ "FiraGO" "Noto Sans Malayalam" ];
-        monospace = [ "FiraCode Nerd Font" "FiraMono Nerd Font" ];
+        serif = [ "IBM Plex Serif" "Noto Serif Malayalam" ];
+        sansSerif = [ "IBM Plex Sans" "Noto Sans Malayalam" ];
+        monospace = [ "IBM Plex Mono" "FiraCode Nerd Font" ];
       };
     };
   };
