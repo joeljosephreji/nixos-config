@@ -178,7 +178,7 @@
       nerd-fonts.fira-code
       nerd-fonts.fira-mono
       nerd-fonts.symbols-only
-      nerd-fonts.im-writing
+      nerd-fonts.blex-mono
       fira-code
       fira-sans
       fira-go
@@ -191,7 +191,7 @@
       defaultFonts = {
         serif = [ "IBM Plex Serif" "Noto Serif Malayalam" ];
         sansSerif = [ "IBM Plex Sans" "Noto Sans Malayalam" ];
-        monospace = [ "IBM Plex Mono" "FiraCode Nerd Font" ];
+        monospace = [ "BlexMono Nerd Font" "IBM Plex Mono" ];
       };
     };
   };
