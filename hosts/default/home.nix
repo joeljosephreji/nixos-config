@@ -32,6 +32,7 @@
     pkgs.lxqt.lxqt-policykit
 
     # compilers, interpreters, and programming stuff
+    pkgs.tree-sitter
     pkgs.gcc
     pkgs.gnumake
     pkgs.python3Minimal
@@ -41,9 +42,11 @@
         # runScript = "zsh -l";
     # }))
     pkgs.nodejs
+    # lua
     pkgs.lua51Packages.lua # for neovim
     pkgs.lua51Packages.luarocks_bootstrap # for neovim
-    pkgs.tree-sitter
+    pkgs.lua-language-server
+    pkgs.stylua
 
     # command line utils
     pkgs.oh-my-posh
