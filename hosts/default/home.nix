@@ -47,6 +47,9 @@
     pkgs.lua51Packages.luarocks_bootstrap # for neovim
     pkgs.lua-language-server
     pkgs.stylua
+    # shell
+    pkgs.shellcheck
+    pkgs.shfmt
 
     # command line utils
     pkgs.oh-my-posh
@@ -471,7 +474,6 @@
 # TODO: hwinfo/lstopo
 # TODO: meld
 # TODO: pandoc
-# TODO: shellcheck
 # TODO: bottles
 # TODO: restore deleted sleep service to make it nix-y refer commit ebe4defdfa71f5e0176019f0ff9aa98b61dd5e49 in dotfiles repo
 # TODO: issue with mic not working after plugin headset
