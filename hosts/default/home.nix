@@ -45,8 +45,9 @@
     # lua
     pkgs.lua51Packages.lua # for neovim
     pkgs.lua51Packages.luarocks_bootstrap # for neovim
-    pkgs.lua-language-server
-    pkgs.stylua
+    pkgs.lua51Packages.luacheck # linter
+    pkgs.lua-language-server # lsp
+    pkgs.stylua # formatter
     # shell
     pkgs.shellcheck
     pkgs.shfmt
