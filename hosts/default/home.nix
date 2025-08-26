@@ -103,6 +103,7 @@
     pkgs.pwvucontrol
     pkgs.libnotify
     pkgs.kdePackages.kasts
+    pkgs.bibletime
     # pkgs.gsmartcontrol # facing some issues with polkit agent, need to fix
     # pkgs.gparted # facing some issues with polkit agent, need to fix
     # TODO: might need to add xorg-xhost for the above stuff or look for options
