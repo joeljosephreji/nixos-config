@@ -12,14 +12,16 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
-  # outputs = { self, nixpkgs, nixpkgs-stable, ... }@inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/default/configuration.nix
-        inputs.home-manager.nixosModules.default
-      ];
+  outputs =
+    { self, nixpkgs, ... }@inputs:
+    {
+      # outputs = { self, nixpkgs, nixpkgs-stable, ... }@inputs: {
+      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/default/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
-  };
 }

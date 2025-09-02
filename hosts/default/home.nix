@@ -39,7 +39,7 @@
     pkgs.pipenv
     pkgs.conda
     # (pkgs.conda.overrideAttrs (oldAttrs: {
-        # runScript = "zsh -l";
+    # runScript = "zsh -l";
     # }))
     pkgs.nodejs
     # nix language
@@ -236,29 +236,30 @@
       background_blur = 5;
       background_opacity = "0.9";
       enable_audio_bell = false;
-    symbol_map = let
-      mappings = [
-        "U+23FB-U+23FE"
-        "U+2B58"
-        "U+E200-U+E2A9"
-        "U+E0A0-U+E0A3"
-        "U+E0B0-U+E0BF"
-        "U+E0C0-U+E0C8"
-        "U+E0CC-U+E0CF"
-        "U+E0D0-U+E0D2"
-        "U+E0D4"
-        "U+E700-U+E7C5"
-        "U+F000-U+F2E0"
-        "U+2665"
-        "U+26A1"
-        "U+F400-U+F4A8"
-        "U+F67C"
-        "U+E000-U+E00A"
-        "U+F300-U+F313"
-        "U+E5FA-U+E62B"
-      ];
-    in
-      (builtins.concatStringsSep "," mappings) + " Symbols Nerd Font";
+      symbol_map =
+        let
+          mappings = [
+            "U+23FB-U+23FE"
+            "U+2B58"
+            "U+E200-U+E2A9"
+            "U+E0A0-U+E0A3"
+            "U+E0B0-U+E0BF"
+            "U+E0C0-U+E0C8"
+            "U+E0CC-U+E0CF"
+            "U+E0D0-U+E0D2"
+            "U+E0D4"
+            "U+E700-U+E7C5"
+            "U+F000-U+F2E0"
+            "U+2665"
+            "U+26A1"
+            "U+F400-U+F4A8"
+            "U+F67C"
+            "U+E000-U+E00A"
+            "U+F300-U+F313"
+            "U+E5FA-U+E62B"
+          ];
+        in
+        (builtins.concatStringsSep "," mappings) + " Symbols Nerd Font";
     };
     shellIntegration = {
       enableZshIntegration = true;
@@ -405,24 +406,27 @@
     mimeApps = {
       enable = true;
       associations.added = {
-        "application/pdf" = ["org.pwmt.zathura.desktop"];
-        "text/plain" = ["nvim.desktop"];
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = ["writer.desktop"];
-        "application/vnd.oasis.opendocument.text" = ["writer.desktop"];
-        "inode/directory" = ["pcmanfm-qt.desktop" "lxqt-archiver.desktop"];
-        "image/jpeg" = ["vimiv.desktop"];
-        "image/png" = ["vimiv.desktop"];
+        "application/pdf" = [ "org.pwmt.zathura.desktop" ];
+        "text/plain" = [ "nvim.desktop" ];
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [ "writer.desktop" ];
+        "application/vnd.oasis.opendocument.text" = [ "writer.desktop" ];
+        "inode/directory" = [
+          "pcmanfm-qt.desktop"
+          "lxqt-archiver.desktop"
+        ];
+        "image/jpeg" = [ "vimiv.desktop" ];
+        "image/png" = [ "vimiv.desktop" ];
       };
       defaultApplications = {
-        "application/pdf" = ["org.pwmt.zathura.desktop"];
-        "text/plain" = ["nvim.desktop"];
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = ["writer.desktop"];
-        "application/vnd.oasis.opendocument.text" = ["writer.desktop"];
-        "inode/directory" = ["pcmanfm-qt.desktop"];
-        "image/jpeg" = ["vimiv.desktop"];
-        "image/png" = ["vimiv.desktop"];
-        "x-scheme-handler/sgnl" = ["signal.desktop"];
-        "x-scheme-handler/signalcaptcha" = ["signal.desktop"];
+        "application/pdf" = [ "org.pwmt.zathura.desktop" ];
+        "text/plain" = [ "nvim.desktop" ];
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [ "writer.desktop" ];
+        "application/vnd.oasis.opendocument.text" = [ "writer.desktop" ];
+        "inode/directory" = [ "pcmanfm-qt.desktop" ];
+        "image/jpeg" = [ "vimiv.desktop" ];
+        "image/png" = [ "vimiv.desktop" ];
+        "x-scheme-handler/sgnl" = [ "signal.desktop" ];
+        "x-scheme-handler/signalcaptcha" = [ "signal.desktop" ];
       };
     };
   };
@@ -490,4 +494,3 @@
 # TODO: fix logout - figure out the issue when logging out where cursor blinks in a blank screen
 # TODO: see if there are workarounds for autotype by keepassxc
 # TODO: solve issue with lsp not working in neovim on nixos
-

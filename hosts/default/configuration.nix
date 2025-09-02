@@ -2,18 +2,26 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-      inputs.catppuccin.nixosModules.catppuccin
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+    inputs.catppuccin.nixosModules.catppuccin
+  ];
 
   # Flakes and nix command
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # cache for cuda libraries
   nix.settings = {
@@ -86,8 +94,14 @@
   users.users.kierkegaard = {
     isNormalUser = true;
     description = "kierkegaard";
-    extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "podman" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "input"
+      "libvirtd"
+      "podman"
+    ];
+    packages = with pkgs; [ ];
   };
 
   # Allow unfree packages
@@ -96,16 +110,16 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  git
-  kitty
-  networkmanagerapplet
-  brightnessctl
-  playerctl
-  coreutils-full
-  unzip
-  wget
-  pciutils
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    git
+    kitty
+    networkmanagerapplet
+    brightnessctl
+    playerctl
+    coreutils-full
+    unzip
+    wget
+    pciutils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -163,10 +177,10 @@
     useGlobalPkgs = true;
     users = {
       "kierkegaard" = {
-          imports = [
-            ./home.nix
-            inputs.catppuccin.homeModules.catppuccin
-          ];
+        imports = [
+          ./home.nix
+          inputs.catppuccin.homeModules.catppuccin
+        ];
       };
     };
   };
@@ -189,9 +203,18 @@
     fontDir.enable = true;
     fontconfig = {
       defaultFonts = {
-        serif = [ "IBM Plex Serif" "Noto Serif Malayalam" ];
-        sansSerif = [ "IBM Plex Sans" "Noto Sans Malayalam" ];
-        monospace = [ "BlexMono Nerd Font" "IBM Plex Mono" ];
+        serif = [
+          "IBM Plex Serif"
+          "Noto Serif Malayalam"
+        ];
+        sansSerif = [
+          "IBM Plex Sans"
+          "Noto Sans Malayalam"
+        ];
+        monospace = [
+          "BlexMono Nerd Font"
+          "IBM Plex Mono"
+        ];
       };
     };
   };
