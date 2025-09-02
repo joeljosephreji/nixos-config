@@ -42,6 +42,8 @@
         # runScript = "zsh -l";
     # }))
     pkgs.nodejs
+    # nix language
+    pkgs.nixfmt
     # lua
     pkgs.lua51Packages.lua # for neovim
     pkgs.lua51Packages.luarocks_bootstrap # for neovim
