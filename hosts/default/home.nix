@@ -43,6 +43,7 @@
     # }))
     pkgs.nodejs
     # nix language
+    pkgs.nixd
     pkgs.nixfmt
     # lua
     pkgs.lua51Packages.lua # for neovim
