@@ -27,7 +27,7 @@
     # tools for window manager
     pkgs.stow
     pkgs.waybar # TODO: fix the issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
-    pkgs.rofi-wayland
+    pkgs.rofi
     pkgs.dunst
     pkgs.lxqt.lxqt-policykit
 
