@@ -124,6 +124,7 @@
 
     # games
     pkgs.prismlauncher # por minecraft
+    pkgs.mgba
 
     # icon theme
     (pkgs.catppuccin-papirus-folders.override {
