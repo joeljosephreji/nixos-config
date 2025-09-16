@@ -326,8 +326,19 @@
   programs.virt-manager.enable = true;
 
   # bluetooth
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true; # powers up the default Bluetooth controller on boot
+    settings = {
+      # following: https://www.reddit.com/r/NixOS/comments/1ch5d2p/comment/lkbabax/
+      General = {
+        Privacy = "device";
+        JustWorksRepairing = "always";
+        Class = "0x000100";
+        FastConnectable = "true";
+      };
+    };
+  };
   services.blueman.enable = true;
 
   # nix automatic garbage collecting
@@ -346,6 +357,9 @@
 
   # for nixd lsp to get the nixpkgs when using nix flakes
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
+  # for xbox controller
+  hardware.xpadneo.enable = true;
 
   # TODO: remove after migrating to native nix. nix-ld for having mason, other packages managers' binaries
   programs.nix-ld.enable = true;
