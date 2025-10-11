@@ -124,7 +124,7 @@
 
     # games
     pkgs.prismlauncher # por minecraft
-    pkgs.mgba
+    # pkgs.mgba # TODO: wait till cmake fix
 
     # icon theme
     (pkgs.catppuccin-papirus-folders.override {
