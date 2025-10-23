@@ -101,7 +101,7 @@
     pkgs.shortwave
     pkgs.tenacity
     pkgs.wezterm
-    pkgs.calibre
+    # pkgs.calibre # TODO: uncomment after the fix
     pkgs.pwvucontrol
     pkgs.libnotify
     pkgs.kdePackages.kasts
