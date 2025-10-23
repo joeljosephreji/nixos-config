@@ -29,7 +29,6 @@
     pkgs.waybar # TODO: fix the issue after sleep where workspaces get locked like the previous situations and have to restart for it to get fixed again
     pkgs.rofi
     pkgs.dunst
-    pkgs.lxqt.lxqt-policykit
 
     # compilers, interpreters, and programming stuff
     pkgs.tree-sitter
@@ -471,6 +470,9 @@
       isDefault = true;
     };
   };
+
+  # hyprpolkitagent
+  services.hyprpolkitagent.enable = true;
 
 }
 
