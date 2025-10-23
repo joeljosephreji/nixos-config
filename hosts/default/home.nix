@@ -82,9 +82,9 @@
     pkgs.keepassxc
     pkgs.flowtime
     pkgs.zotero
-    pkgs.lxqt.pcmanfm-qt
+    # pkgs.lxqt.pcmanfm-qt # TODO: uncomment after this is fixed
     # pkgs.protonvpn-gui # TODO: add back after this is fixed
-    # pkgs.lxqt.lxqt-archiver # TODO uncomment after this is fixed
+    # pkgs.lxqt.lxqt-archiver # TODO: uncomment after this is fixed
     pkgs.grim
     pkgs.slurp
     pkgs.gimp3
