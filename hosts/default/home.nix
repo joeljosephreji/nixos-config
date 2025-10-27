@@ -82,9 +82,9 @@
     pkgs.keepassxc
     pkgs.flowtime
     pkgs.zotero
-    # pkgs.lxqt.pcmanfm-qt # TODO: uncomment after this is fixed
+    pkgs.lxqt.pcmanfm-qt
     # pkgs.protonvpn-gui # TODO: add back after this is fixed
-    # pkgs.lxqt.lxqt-archiver # TODO: uncomment after this is fixed
+    pkgs.lxqt.lxqt-archiver
     pkgs.grim
     pkgs.slurp
     pkgs.gimp3
@@ -101,7 +101,7 @@
     pkgs.shortwave
     pkgs.tenacity
     pkgs.wezterm
-    # pkgs.calibre # TODO: uncomment after the fix
+    pkgs.calibre
     pkgs.pwvucontrol
     pkgs.libnotify
     pkgs.kdePackages.kasts
@@ -452,7 +452,7 @@
   };
 
   services.copyq = {
-    enable = false;
+    enable = true;
     forceXWayland = false;
   };
 
