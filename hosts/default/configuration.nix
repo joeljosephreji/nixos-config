@@ -66,7 +66,7 @@
   networking.networkmanager.enable = true;
 
   # Set your time zone.
-  time.timeZone = "Australia/Melbourne";
+  time.timeZone = "Australia/Brisbane";
 
   # Select internationalisation properties.
   # TODO: check later to see if Indian locale has utf8
