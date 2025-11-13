@@ -112,7 +112,7 @@
 
     # messengers
     pkgs.signal-desktop-bin
-    pkgs.element-desktop
+    # pkgs.element-desktop # TODO: fix after the jitsi issue is resolved
     pkgs.discord
     pkgs.slack
 
