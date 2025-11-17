@@ -99,7 +99,7 @@
     # pkgs.obs-studio # TODO: check if flatpak is a better option
     pkgs.qbittorrent
     pkgs.shortwave
-    # pkgs.tenacity # TODO: keep an eye till it is fixed
+    pkgs.tenacity
     pkgs.wezterm
     pkgs.calibre
     pkgs.pwvucontrol
