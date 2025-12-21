@@ -195,7 +195,7 @@
       nerd-fonts.blex-mono
       fira-code
       fira-sans
-      fira-go
+      # fira-go # TODO: uncomment after the fix
       fira-math
       ibm-plex
       google-fonts
