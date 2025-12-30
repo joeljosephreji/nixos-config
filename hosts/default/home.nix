@@ -117,7 +117,7 @@
     pkgs.slack
 
     # music
-    pkgs.youtube-music
+    pkgs.pear-desktop
     # pkgs.spotube # TODO: wait for rewrite
     # pkgs.kdePackages.audiotube # TODO: still not working
 
