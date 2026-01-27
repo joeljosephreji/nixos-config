@@ -198,20 +198,6 @@
     tray = true;
   };
 
-  # flameshot
-  services.flameshot = {
-    enable = true;
-    package = pkgs.flameshot.override {
-      enableWlrSupport = true; # TODO: remove once it becomes the default
-    };
-    settings = {
-      General = {
-        showStartupLaunchMessage = false;
-        disabledGrimWarning = true;
-      };
-    };
-  };
-
   # neovim
   programs.neovim = {
     enable = true;
