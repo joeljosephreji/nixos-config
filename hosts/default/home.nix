@@ -92,7 +92,6 @@
     pkgs.libreoffice-qt-fresh
     pkgs.kdiskmark
     pkgs.zathura
-    pkgs.mousam
     pkgs.mpv
     pkgs.vlc
     pkgs.localsend
