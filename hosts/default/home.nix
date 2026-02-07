@@ -75,7 +75,7 @@
 
     # programming software
     pkgs.minizinc
-    pkgs.minizincide
+    pkgs.minizinc-ide
 
     # application software and utils
     pkgs.vimiv-qt
