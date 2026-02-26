@@ -100,7 +100,7 @@
     pkgs.shortwave
     pkgs.tenacity
     pkgs.wezterm
-    pkgs.calibre
+    # pkgs.calibre # TODO: bring it back once the build is fixed
     pkgs.pwvucontrol
     pkgs.libnotify
     pkgs.kdePackages.kasts
