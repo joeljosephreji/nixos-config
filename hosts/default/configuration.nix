@@ -273,7 +273,6 @@
   hardware.graphics.enable = true; # opengl enabled
   hardware.nvidia = {
     open = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
     modesetting.enable = true;
 
     dynamicBoost.enable = false; # error coming up in powerd service
