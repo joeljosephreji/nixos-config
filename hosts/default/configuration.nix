@@ -219,7 +219,6 @@
     supergfxd.enable = true;
     asusd = {
       enable = true;
-      enableUserService = true;
     };
     udev.extraHwdb = ''
       evdev:name:*:dmi:bvn*:bvr*:bd*:svnASUS*:pn*:*
