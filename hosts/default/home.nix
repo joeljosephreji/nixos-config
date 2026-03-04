@@ -110,7 +110,7 @@
     # TODO: might need to add xorg-xhost for the above stuff or look for options
 
     # messengers
-    pkgs.signal-desktop-bin
+    pkgs.signal-desktop
     pkgs.element-desktop
     pkgs.discord
     pkgs.slack
